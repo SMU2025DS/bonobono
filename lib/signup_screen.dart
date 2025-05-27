@@ -147,6 +147,7 @@ class _SignupScreenState extends State<SignupScreen> {
           'gender': gender,
           'birthdate': birthdate, // 🔹 null 가능
           'createdAt': FieldValue.serverTimestamp(), // 가입 시간
+          'wordCount': 20, // 🟢 하루 단어 수 기본값 추가
         });
 
         ScaffoldMessenger.of(context).showSnackBar(
